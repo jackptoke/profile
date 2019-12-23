@@ -1,0 +1,24 @@
+.about-page{
+    height: 100vh;
+    /* padding: 10px; */
+    width: 100vw;
+    margin: auto;  
+    background-image: url("./images/graduation.jpg"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-text{
+    /* transform: translate(-35%, 30%); */
+    display: block;
+    width: 50%;
+    /* margin: 0px auto; */
+    padding: 5px 10px;
+    color: white;
+    position: absolute;
+    left: 22.5%;
+    bottom: 70px;
+    font-size: 1.5em;
+    background-image:linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+}

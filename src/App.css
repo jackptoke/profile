@@ -17,6 +17,16 @@
   color: #61dafb;
 }
 
+.logo-image{
+  width: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+  .logo-image{
+    width: 50px;
+  }
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

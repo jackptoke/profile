@@ -1,5 +1,5 @@
 .contact-page{
-    height: 100vh;
+    height: calc(100vh + 10px);
     width: 100vw;
     margin: auto;  
     background-image: url("./images/melbourne.jpg"); 
@@ -7,11 +7,6 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-/* body {
-  background-color: #ddd;
-  padding: 100px 20px 20px 20px;
-} */
 
 .social-buttons {
   display: flex;
@@ -112,10 +107,10 @@
 .social-button--steam::after {
   background: #7da10e;
 }
-.social-button--snapchat {
+.social-button--resume {
   color: #eec900;
 }
-.social-button--snapchat::after {
+.social-button--resume::after {
   background: #eec900;
 }
 .social-button--twitter {

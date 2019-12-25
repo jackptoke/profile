@@ -8,31 +8,24 @@ import Home from './Home';
 import About from './About';
 import Contacts from './Contacts';
 import Services from './Services';
+import Portfolio from './Portfolio';
 
 function App() {
   return (
     <div className="App">
-      <div class="logo">
-        <img src={logo} alt="Logo of Jack Toke" />
+      <div className="logo">
+        <img className="logo-image" src={logo} alt="Logo of Jack Toke" />
       </div>
       <Router>
         <Home path="/" />
         <About path="/about" />
         <Services path="/services" />
+        <Portfolio path="/portfolio" />
         <Contacts path="/contacts" />
       </Router>
       <Menu />
     </div>
   );
-}
-
-const jsMenuNode = document.querySelector('.menu');
-const demoMenu = new Menu ({
-  menuNode: jsMenuNode
-});
-
-function callMenuToggle(event) {
-  demoMenu.toggleMenuState('menu_activated');
 }
 
 export default App;

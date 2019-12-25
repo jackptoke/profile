@@ -3,7 +3,6 @@ import {Link} from '@reach/router';
 
 class Menu extends React.Component {
     constructor(props) {
-    // this.menuNode = props.menuNode;
     super(props);
     this.state = {
         menuClassName: "menu",
@@ -26,22 +25,16 @@ class Menu extends React.Component {
         <nav className="menu__nav">
           <ul className="r-list menu__list">
             <li className="menu__group">
-              <Link to="/" className="r-link menu__link">Home</Link>
+              <Link to="/" className="r-link menu__link" onClick={this.toggleMenuClassName}>Home</Link>
             </li>
             <li className="menu__group">
-              <Link to="/about" className="r-link menu__link">About</Link>
+              <Link to="/about" className="r-link menu__link" onClick={this.toggleMenuClassName}>About</Link>
             </li>
             <li className="menu__group">
-              <Link to="/services" className="r-link menu__link">Services</Link>
+              <a href="/portfolio" className="r-link menu__link" onClick={this.toggleMenuClassName}>Portfolio</a>
             </li>
             <li className="menu__group">
-              <a href="#0" className="r-link menu__link">Portfolio</a>
-            </li>
-            <li className="menu__group">
-              <a href="#0" className="r-link menu__link">Blog</a>
-            </li>
-            <li className="menu__group">
-              <Link to="/contacts" className="r-link menu__link">Contacts</Link>
+              <Link to="/contacts" className="r-link menu__link" onClick={this.toggleMenuClassName}>Contacts</Link>
             </li>
           </ul>
         </nav>

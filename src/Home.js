@@ -4,13 +4,13 @@ import './Home.css';
 class Home extends React.Component{
     renderHome(){
         const htmls = <div className="page">
-             <div class="hero-text display-font">
-                <span class="green-text">EXCELLENCE</span> IS A HABIT,
+             <div className="hero-text display-font">
+                <span className="green-text">EXCELLENCE</span> IS NOT AN ACT,
             </div>
-            <div class="hero-text2 display-font">
-                NOT AN <span class="green-text">ACT</span>.
+            <div className="hero-text2 display-font">
+                IT'S A <span className="green-text">HABIT</span>.
             </div>
-        <div className="hero-text3 display-font"><span class="green-text">EXCELLENCE</span> <br/>IS A HABIT,<br/> NOT AN <span class="green-text">ACT</span>.</div>
+        <div className="hero-text3 display-font"><span className="green-text">EXCELLENCE</span> <br/>IS NOT AN ACT,<br/> IT'S A <span className="green-text">HABIT</span>.</div>
       </div>;
       return htmls;
     }

@@ -31,7 +31,7 @@ class Menu extends React.Component {
               <Link to="/about" className="r-link menu__link" onClick={this.toggleMenuClassName}>About</Link>
             </li>
             <li className="menu__group">
-              <a href="/portfolio" className="r-link menu__link" onClick={this.toggleMenuClassName}>Portfolio</a>
+              <a href="/portfolio2" className="r-link menu__link" onClick={this.toggleMenuClassName}>Portfolio</a>
             </li>
             <li className="menu__group">
               <Link to="/contacts" className="r-link menu__link" onClick={this.toggleMenuClassName}>Contacts</Link>

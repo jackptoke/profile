@@ -9,6 +9,7 @@ import About from './About';
 import Contacts from './Contacts';
 import Services from './Services';
 import Portfolio from './Portfolio';
+import PortfolioCard from './PortfolioCard';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <About path="/about" />
         <Services path="/services" />
         <Portfolio path="/portfolio" />
+        <PortfolioCard path="/portfolio2" />
         <Contacts path="/contacts" />
       </Router>
       <Menu />

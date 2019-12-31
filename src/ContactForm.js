@@ -2,6 +2,7 @@ import React from 'react';
 import './ContactForm.css';
 import emailjs from 'emailjs-com';
 import Schema from 'validate';
+import axios from 'axios';
 
 class ContactForm extends React.Component{
     state = { 
@@ -95,6 +96,18 @@ class ContactForm extends React.Component{
     updateEmail = (event) => {
         this.setState({email: event.target.value});
     }
+
+    saveContact = (contactObject) => {
+        axios.post('/api/contact', contactObject)
+        .then(res => {
+            if(res.statusText === 'OK'){
+                console.log("Contact saved.");
+            }
+            else{
+                console.error("Failed to save the contact." + res.status);
+            }
+        })
+    }
     
     sendEmail = (e) => {
         e.preventDefault();
@@ -143,6 +156,7 @@ class ContactForm extends React.Component{
 
               this.resetInputField();
               this.resetValidationMessage();
+              this.saveContact({name, mobile, email, subject, message});
             })
             // Handle errors here however you like, or use a React error boundary
             .catch(err => console.error('Oh well, you failed. Here some thoughts on the error that occured:', err));
